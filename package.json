@@ -1,0 +1,43 @@
+{
+  "name": "promises-batched",
+  "version": "0.1.0",
+  "description": "Iterate through promises in a batched manner",
+  "keywords": [
+    "async",
+    "await",
+    "batch",
+    "concurrency",
+    "es6",
+    "promise",
+    "throttle"
+  ],
+  "license": "MIT",
+  "repository": "whilenot-dev/promises-batched",
+  "author": "wh!le <github@whilenot.dev>",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "files": [
+    "./dist/**/*.js",
+    "./dist/**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "bun run check:types && bun run build:dist",
+    "build:dist": "tsc",
+    "check": "bun run check:format && bun run check:lint && bun run check:types",
+    "check:format": "biome format",
+    "check:lint": "biome lint",
+    "check:types": "tsc --noEmit",
+    "clean": "bun run clean:build",
+    "clean:build": "rimraf ./dist",
+    "format": "biome format --write",
+    "lint": "biome lint --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "rimraf": "6.0.1",
+    "typescript": "^5.9.2"
+  }
+}
