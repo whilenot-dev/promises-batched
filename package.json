@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "build": "bun run check:types && bun run build:dist",
-    "build:dist": "tsc",
+    "build:dist": "tsc -p ./tsconfig.prod.json",
     "check": "bun run check:format && bun run check:lint && bun run check:types",
     "check:format": "biome format",
     "check:lint": "biome lint",
