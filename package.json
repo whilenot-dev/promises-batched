@@ -1,6 +1,6 @@
 {
   "name": "promises-batched",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Iterate through promises in a batched manner",
   "keywords": [
     "async",
