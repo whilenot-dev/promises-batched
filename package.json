@@ -34,7 +34,7 @@
     "clean:build": "rimraf ./dist",
     "format": "biome format --write",
     "lint": "biome lint --write",
-    "prepublish": "bun run clean:build && bun run build",
+    "prepare": "bun run clean:build && bun run build",
     "test": "bun test"
   },
   "devDependencies": {
