@@ -33,7 +33,8 @@
     "clean": "bun run clean:build",
     "clean:build": "rimraf ./dist",
     "format": "biome format --write",
-    "lint": "biome lint --write"
+    "lint": "biome lint --write",
+    "prepublish": "bun run clean:build && bun run build"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.3",
